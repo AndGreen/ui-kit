@@ -18,7 +18,9 @@
     "url": "https://github.com/mango-techsurance/ui-kit/issues"
   },
   "homepage": "https://github.com/mango-techsurance/ui-kit#readme",
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^4.2.0"
+  },
   "devDependencies": {
     "@storybook/react": "^5.0.11",
     "@storybook/addon-actions": "^5.0.11",

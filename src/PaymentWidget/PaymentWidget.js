@@ -1,32 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { loadPaymentScript } from './utils';
+import { PaymentWidgetConfig } from './PaymentWidgetConfig';
 
-const PaymentWidget = ({ onSuccess, onFail }) => {
+export const PaymentWidget = ({ show }) => {
+  const [scriptStatus, setScriptStatus] = useState(false);
+
   useEffect(() => {
-    const widget = new window.cp.CloudPayments();
-    widget.charge(
-      {
-        // options
-        publicId: 'test_api_00000000000000000000001', // id из личного кабинета
-        description: 'Пример оплаты (деньги сниматься не будут)', // назначение
-        amount: 10, // сумма
-        currency: 'RUB', // валюта
-        invoiceId: '1234567', // номер заказа  (необязательно)
-        accountId: 'user@example.com', // идентификатор плательщика (необязательно)
-        skin: 'modern', // дизайн виджета
-        data: {
-          myProp: 'myProp value', // произвольный набор параметров
-        },
-      },
-      options => {
-        onSuccess(options);
-      },
-      (reason, options) => {
-        onFail(reason, options);
-      },
-    );
+    loadPaymentScript(() => {
+      setScriptStatus(true);
+    });
   });
 
-  return <React.Fragment />;
+  return <div>{show && scriptStatus && <PaymentWidgetConfig />}</div>;
 };
-
-export default PaymentWidget;

@@ -1,1 +1,1 @@
-export { default } from './PaymentWidgetWrapper';
+export { PaymentWidget } from './PaymentWidget';
