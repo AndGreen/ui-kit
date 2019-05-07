@@ -6,7 +6,7 @@ const AgreementWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F7F7F7;
+  background: #f7f7f7;
   padding: 20px;
   width: 100%;
 `;
@@ -19,10 +19,13 @@ const AgreementText = styled(TextSmall)`
   }
 `;
 
-export const Agreement = ({children}) => {
+export const Agreement = () => {
   return (
     <AgreementWrapper>
-      <AgreementText>{children}</AgreementText>
+      <AgreementText>
+        Нажимая на кнопку, вы соглашаетесь с <a>правилами и условиями</a>, 
+        и с <a>политикой конфиденциальности</a>
+      </AgreementText>
     </AgreementWrapper>
-  )
+  );
 };
