@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { loadPaymentScript } from './utils';
-import { PaymentWidgetConfig } from './PaymentWidgetConfig';
 
-export const PaymentWidget = ({ show }) => {
-  const [scriptStatus, setScriptStatus] = useState(false);
+export const PaymentWidget = () => {
+  loadPaymentScript();
 
-  useEffect(() => {
-    loadPaymentScript(() => {
-      setScriptStatus(true);
-    });
-  });
-
-  return <div>{show && scriptStatus && <PaymentWidgetConfig />}</div>;
+  return <React.Fragment />;
 };
