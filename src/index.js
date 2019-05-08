@@ -8,3 +8,5 @@ export { Icon } from './Icon';
 export { Logo, LogoText } from './Logo';
 export { PaymentWidget, startPayment } from './PaymentWidget';
 export { Text, TextSmall, TextMedium, TextTitle } from './Text';
+
+export { GlobalStyles } from './GlobalStyles';

@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const TextTitle = styled.div`
@@ -8,6 +7,6 @@ export const TextTitle = styled.div`
   font-size: 36px;
   line-height: 48px;
   text-align: center;
-  
+
   color: #182033;
 `;

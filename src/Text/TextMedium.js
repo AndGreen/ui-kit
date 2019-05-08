@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const TextMedium = styled.div`
@@ -9,5 +8,5 @@ export const TextMedium = styled.div`
   line-height: 53px;
   text-align: center;
 
-  color: #2A2A2A;
+  color: #2a2a2a;
 `;

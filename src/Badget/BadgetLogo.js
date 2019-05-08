@@ -14,10 +14,8 @@ export const BadgetWrapper = styled.div`
   border-radius: 100px;
 `;
 
-export const BadgetLogo = () => {
-  return (
-    <BadgetWrapper>
-      <Logo />
-    </BadgetWrapper>
-  );
-};
+export const BadgetLogo = () => (
+  <BadgetWrapper>
+    <Logo />
+  </BadgetWrapper>
+);

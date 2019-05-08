@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const TextSmall = styled.div`
@@ -8,6 +7,6 @@ export const TextSmall = styled.div`
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  
+
   color: #182033;
 `;

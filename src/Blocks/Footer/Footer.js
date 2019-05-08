@@ -17,10 +17,4 @@ const FooterWrapper = styled.section`
   line-height: 26px;
 `;
 
-export const Footer = () => {
-  return (
-    <FooterWrapper>
-      © Mango Techsurance
-    </FooterWrapper>
-  )
-}
+export const Footer = () => <FooterWrapper>© Mango Techsurance</FooterWrapper>;

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
 
   html,
   body {
@@ -29,5 +29,3 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5em;
   }
 `;
-
-export default GlobalStyle;

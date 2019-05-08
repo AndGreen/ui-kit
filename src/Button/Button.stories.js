@@ -6,4 +6,6 @@ import { ButtonTransparent } from './ButtonTransparent';
 
 storiesOf('Button', module)
   .add('colorized', () => <Button>Стать подписчиком</Button>)
-  .add('transparent', () => <ButtonTransparent>Посмотреть демо полиса</ButtonTransparent>);
+  .add('transparent', () => (
+    <ButtonTransparent>Посмотреть демо полиса</ButtonTransparent>
+  ));

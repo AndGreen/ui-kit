@@ -17,15 +17,16 @@ const AgreementText = styled(TextSmall)`
   > a {
     text-decoration: underline;
   }
+  > a:visited {
+    color: black;
+  }
 `;
 
-export const Agreement = () => {
-  return (
-    <AgreementWrapper>
-      <AgreementText>
-        Нажимая на кнопку, вы соглашаетесь с <a>правилами и условиями</a>, 
-        и с <a>политикой конфиденциальности</a>
-      </AgreementText>
-    </AgreementWrapper>
-  );
-};
+export const Agreement = () => (
+  <AgreementWrapper>
+    <AgreementText>
+      Нажимая на кнопку, вы соглашаетесь с <a href="/">правилами и условиями</a>
+      , и с <a href="/">политикой конфиденциальности</a>
+    </AgreementText>
+  </AgreementWrapper>
+);
