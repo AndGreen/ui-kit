@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/mango-techsurance/ui-kit#readme",
   "dependencies": {
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@storybook/react": "^5.0.11",
