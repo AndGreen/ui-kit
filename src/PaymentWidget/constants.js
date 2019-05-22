@@ -11,6 +11,7 @@ export const widgetSettings = {
   currency: 'RUB', // валюта
   skin: 'modern', // дизайн виджета
   data: {
+    userId: uuid(),
     productId: uuid(),
     periodPrice,
     periodType,
