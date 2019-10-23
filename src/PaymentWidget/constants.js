@@ -1,19 +1,22 @@
-import uuid from 'uuid';
+import uuid from "uuid";
 
 const periodPrice = 10;
-const periodType = 'MONTH';
+const periodType = "MONTH";
 
 export const widgetSettings = {
   // options
-  publicId: 'pk_4533efc4d554254ad476820ddb3b1', // id из личного кабинета
-  description: 'Пример оплаты (деньги сниматься не будут)', // назначение
+  publicId: "pk_4533efc4d554254ad476820ddb3b1", // id из личного кабинета
+  description: "Пример оплаты (деньги сниматься не будут)", // назначение
   amount: periodPrice, // сумма
-  currency: 'RUB', // валюта
-  skin: 'modern', // дизайн виджета
+  currency: "RUB", // валюта
+  skin: "modern", // дизайн виджета
   data: {
-    userId: uuid(),
+    accountId: uuid(),
     productId: uuid(),
     periodPrice,
     periodType,
-  },
+    cloudPayments: {
+      recurrent: { interval: "Month", period: 1 }
+    }
+  }
 };
